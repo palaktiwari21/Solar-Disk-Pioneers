@@ -74,11 +74,3 @@ elif (x==3):
     print('''                                                                                 Your Score is '''+ str(score))
 
     
-    
-# guess1 = input("Which bear lives at the North Pole? ")
-# check_guess(guess1, "polar bear")
-# guess2 = input("Which is the fastest land animal? ")
-# check_guess(guess2, "Cheetah")
-# guess3 = input("Which is the larget animal? ")
-# check_guess(guess3, "Blue Whale")
-# print("Your Score is "+ str(score))
