@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Stick+No+Bills:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <style>
+body {
+  background-image: url('https://thumbs.gfycat.com/WhimsicalThoseConure-max-1mb.gif');
+}
+</style>
+<!-- 3D object -->
+<!-- This inserts the 3D object inside the aside container -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script> 
+
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+      <h1>Exploring the Mysteries</h1>
+     <div class="row"> 
+      <div class="column1"> 
+        <div class="tooltip">       
+          <video src="Sun_video.mkv" type= video/x-matroska; codecs="theora, vorbis" autoplay onerror="failed(event)" class="sun" loop = "true"></video>          
+          <span class="tooltiptext">Text to be added</span>          
+        </div> 
+        
+         
+      </div>
+      
+      <div class="row"> 
+       <div class="column1">  
+         <div class="tooltip">  
+           <img src="Orbiter.jpg" class="park">  
+         </div>               
+       </div> 
+        
+      
+         
+       <div id="aside">    
+          
+       <div class="row"> 
+      <div class="column1"> 
+        <div class="tooltip">       
+          <model-viewer src="Earth.glb" auto-rotate></model-viewer>        
+                 
+        </div> 
+        
+         
+      </div>
+    </div>
+        
+  
+    
+      <audio autoplay loop = "true">
+        <source src="Stairway.mp3" type="audio/mpeg">
+  
+        Your browser does not support the audio element.
+      </audio>
+     
+    
+   
+
+        
+         
+
+  </body>
+</html>
