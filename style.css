@@ -9,6 +9,14 @@ body {
  
 }
 
+h4 {
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
 .blog{
   background-color: black;
   text-decoration-color: yellow;
@@ -157,36 +165,39 @@ display: block;
   margin-right: auto;
   margin-top: 3%;
   border: 8px dotted lightblue;
+  width: 70%;
+  height: 80%;
 }
 
 .parker{  
-  margin-top: 1%;
+  margin-top: 4%;
   border: 8px dotted lightblue;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   border-spacing: 1cm 2em;
-  top: 3%;
- 
+  top: 5%;
+  width: 370px;
+ height: 300px;
 }
 
 .orbiter{    
-  margin-top: 1%;
+  margin-top: 4%;
   border: 8px dotted yellow;
-  width: 450px;
-  height: 325px;
+  width: 370px;
+  height: 300px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
   border-spacing: 1cm 2em;
-  top: 3%;
+  top: 5%;
   
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 5px;
- margin-left: 180px;
+ margin-left: 210px;
 }
 
 /* Clear floats after image containers */
@@ -202,10 +213,11 @@ display: block;
   color: yellow;
   font-size: 23px;
   margin-left: 18px;
+  display: inline;
 }
 /* Tooltip container */
 .tooltip {
-  position: relative;
+  position: absolute;
   display: inline-block; 
   font-size: 20px;
   text-align: center; 
@@ -214,14 +226,14 @@ display: block;
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 150px;
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
  
-  /* Position the tooltip text - see examples below! */
+  /* Position the tooltip text */
   position: absolute;
   z-index: 1;
   
@@ -240,7 +252,7 @@ display: block;
   position: absolute;
   bottom: 0px; 
   right: 550px;
-  height: 280px;
+  height: 240px;
   width: 400px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -275,7 +287,7 @@ display: block;
 }
 
 .sun{
-  width: 800px;
+  width: auto;
   height: 500px;  
   margin-left: 0px;  
   margin-top:2px;
@@ -297,20 +309,84 @@ display: block;
  
 }
 
-/* This styles the aside container */
-#aside {
-  height: 600px;
-  width: 600px;
+
+.earth{
+  width: auto;
+  height: 300px;  
   position: absolute;
-  top: calc(50% - 130px);
-  right: 7%;
+  margin-left: 1100px;  
+  top: 43%
+  
 }
 
-/* This styles the 3D object inserted in the aside container */
-#aside model-viewer {
-  height: 300px;
-  width: 300px;
+.earth1{
+  width: auto;
+  height: 300px;  
   position: absolute;
-  left: 300px;
-  border: none;
+  margin-left: 1100px;  
+  top: 43%
+  
 }
+
+
+nav {
+  width: 100%;
+  margin: auto;   
+  font-size: 30px;  
+  padding-inline-end: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(202, 154, 154);
+  font-weight: 900;
+  
+ 
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+#main-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  display: block;
+}
+
+#main-nav a:hover {
+  background-color: #2c3e50;
+  border: 1px solid #333;
+}
+
+
+
+.sun1{
+  
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  margin-top: 490px;
+
+}
+
+
+
+
+
