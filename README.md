@@ -1,3 +1,3 @@
-## NASA SPACE APPS CHALLENGE
+## NASA SPACE APPS CHALLENGE- Hackathon
 
-# Solar Disk Pioneers
+### Solar Disk Pioneers
