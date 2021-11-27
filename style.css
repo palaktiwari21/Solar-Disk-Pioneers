@@ -1,0 +1,392 @@
+
+body {
+  margin: 2em;  
+  font-family: 'Patrick Hand', cursive;
+  font-size: 10px;
+ background-image: url("https://images.unsplash.com/photo-1590536685202-b550011702bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80");
+ background-color: #cccccc;
+
+ 
+}
+
+h4 {
+  justify-content: center;
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.blog{
+  background-color: black;
+  text-decoration-color: yellow;
+  color: yellow;
+  font-size: 25px;
+}
+.b{
+  background-color: lavender;
+}
+
+.bu{
+  background-color: yellow;
+}
+
+h1 {
+  text-align: center;
+  color: orange;
+  font-family:'Times New Roman', Times, serif;          
+  font-size: 70px;
+  font-weight: bold;
+  margin-right: 40px;
+  margin-top: 10px; 
+}
+
+.slogan {
+  text-align: center;
+  color: rgb(248, 245, 245);
+  font-size: 35px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.centerBig:hover {
+  background-color: rgba(248, 171, 98, 0.993);
+  
+}
+
+
+
+.centerBig {
+  padding: 20px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  margin: auto;
+  background-color: rgb(202, 154, 154);
+  color: whitesmoke;
+  font-size: 40px;
+  justify-content: center;
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
+  transition: all 0.5s; 
+
+}
+
+
+.centerBig span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.centerBig span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.centerBig:hover span {
+  padding-right: 25px;
+}
+
+.centerBig:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+//slash on text
+.slashed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.slashed .top,
+.slashed .bot {
+  text-align: center;
+  font: 80px/100px 'Stick No Bills', sans-serif;
+  text-transform: uppercase;  
+  overflow: hidden;
+  color: #fff;
+}
+.slashed .top:before,
+.slashed .bot:before {
+  content: attr(title);
+  
+}
+.slashed .top {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 50%;
+}
+.slashed .top:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+.slashed .bot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+}
+.slashed .bot:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+
+.center {
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  border: 8px dotted lightblue;
+  width: 70%;
+  height: 80%;
+}
+
+.parker{  
+  margin-top: 4%;
+  border: 8px dotted lightblue;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border-spacing: 1cm 2em;
+  top: 5%;
+  width: 370px;
+ height: 300px;
+}
+
+.orbiter{    
+  margin-top: 4%;
+  border: 8px dotted yellow;
+  width: 370px;
+  height: 300px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border-spacing: 1cm 2em;
+  top: 5%;
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+ margin-left: 210px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  margin: 100px;
+  
+}
+.redirectMeLeft {
+  text-align: right;
+  color: yellow;
+  font-size: 23px;
+  margin-left: 18px;
+  display: inline;
+}
+/* Tooltip container */
+.tooltip {
+  position: absolute;
+  display: inline-block; 
+  font-size: 20px;
+  text-align: center; 
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.gif{
+  position: absolute;
+  bottom: 0px; 
+  right: 550px;
+  height: 240px;
+  width: 400px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border-spacing: 1cm 2em;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.btn{
+  padding: 5px;
+  border-radius: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin: auto;
+  background-color: rgb(202, 154, 154);
+  color: whitesmoke;
+  font-size: 20px;
+  justify-content: center;
+
+  position: absolute;
+  
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.sun{
+  width: auto;
+  height: 500px;  
+  margin-left: 0px;  
+  margin-top:2px;
+}
+
+.park{
+  margin-top: 59%;
+  width: 200px;
+  margin-left: 94%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 10px;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+ 
+}
+
+
+.earth{
+  width: auto;
+  height: 300px;  
+  position: absolute;
+  margin-left: 1100px;  
+  top: 43%
+  
+}
+
+.earth1{
+  width: auto;
+  height: 300px;  
+  position: absolute;
+  margin-left: 1100px;  
+  top: 43%
+  
+}
+
+
+nav {
+  width: 100%;
+  margin: auto;   
+  font-size: 30px;  
+  padding-inline-end: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: rgb(99, 99, 99);
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(202, 154, 154);
+  font-weight: 900;
+  
+ 
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: white;
+}
+
+#main-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px;
+  display: block;
+}
+
+#main-nav a:hover {
+  background-color: #2c3e50;
+  border: 1px solid #333;
+}
+
+
+
+.sun1{
+  
+  color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  margin-top: 490px;
+
+}
+
+
+
+
+
